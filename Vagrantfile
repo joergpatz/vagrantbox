@@ -10,6 +10,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # please see the online documentation at vagrantup.com.
 
   # Every Vagrant virtual environment requires a box to build off of.
+  # official Ubuntu Server 64-bit 14.04 cloud image, see https://vagrantcloud.com/ubuntu/trusty64
   config.vm.box = "ubuntu/trusty64"
 
   # Disable automatic box update checking. If you disable this, then
@@ -121,6 +122,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   #
   #   chef.validation_client_name = "ORGNAME-validator"
 
-  # shell script provisioning
+  # enable shell script provisioning
   config.vm.provision :shell, :path => "bootstrap.sh"
 end

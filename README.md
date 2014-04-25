@@ -2,10 +2,10 @@
 
 1. Download VirtualBox from [here](https://www.virtualbox.org/wiki/Downloads)
 2. Download Vagrant from [here](http://www.vagrantup.com/downloads.html)
-3. Download optionally a vagrant plugin to keep your VirtualBox Guest Additions up to date: https://github.com/dotless-de/vagrant-vbguest
+3. Download optionally a Vagrant plugin to keep your VirtualBox Guest Additions up to date: https://github.com/dotless-de/vagrant-vbguest
 
 Here are my scripts for provisioning a new VagrantBox for web development.
-The Vagrantfile include the shell script `bootstrap.sh` from the host and execute the script as the root user within the guest machine.
+The Vagrantfile include the shell script `bootstrap.sh` from the host and execute this script as the root user within the guest machine.
 
 ## Includes
 
