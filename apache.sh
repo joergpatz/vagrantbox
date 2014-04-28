@@ -4,6 +4,10 @@
 sudo apt-get install -y apache2
 sudo sed -i "s/#ServerRoot.*/ServerName ubuntu/" /etc/apache2/apache2.conf
 
+# Create a domainname directory for the example
+sudo mkdir -p /var/www/phpinfo.dev
+echo "<?php phpinfo();" | sudo tee /var/www/phpinfo.dev/index.php
+
 # Configure Apache Hosts
 sudo a2enmod rewrite
 vhost="<VirtualHost *:80>
