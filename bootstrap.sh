@@ -19,7 +19,7 @@ source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master
 source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/php.sh)
 
 # Download MySQL install script
-# source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/mysql.sh)
+source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/mysql.sh)
 
 # Download MongoDB install script
-source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/mongodb.sh)
+# source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/mongodb.sh)

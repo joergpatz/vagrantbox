@@ -17,6 +17,11 @@ The Vagrantfile include the shell script `bootstrap.sh` from the host and execut
 - PHPMyAdmin (Access: `http://<servername-or-IP>/phpmyadmin`)
 - Joerg's Bash Aliases
 
+## Optional Includes
+
+- MongoDB
+- PHPMoAdmin (Access: `http://phpinfo.dev/moadmin.php`)
+
 After the box has been provisioned, maybe only need to add a entry in the [hosts file](http://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file) on the host machine.
 Need this for correct dev domain -> IP resolution, for example: `192.168.56.3 phpinfo.dev`.
 
