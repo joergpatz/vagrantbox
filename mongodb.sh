@@ -13,5 +13,7 @@ sudo php5enmod mongo
 
 sudo service apache2 reload
 sudo service mongod status
+php -m | grep mongo
 
-# TODO: Getting a AdminUI: http://docs.mongodb.org/ecosystem/tools/administration-interfaces/
+# Getting a AdminUI: http://docs.mongodb.org/ecosystem/tools/administration-interfaces/
+wget -nv -O /var/www/phpinfo.dev/moadmin.php https://raw.githubusercontent.com/MongoDB-Rox/phpMoAdmin-MongoDB-Admin-Tool-for-PHP/master/moadmin.php
