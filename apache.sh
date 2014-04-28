@@ -19,5 +19,5 @@ AllowOverride All
 echo "$vhost" | sudo tee /etc/apache2/sites-available/phpinfo.dev.conf
 sudo a2ensite phpinfo.dev
 
-# Restart apache2 service
-sudo service apache2 restart
+# Reload apache2 service
+sudo service apache2 reload
