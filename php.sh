@@ -9,9 +9,11 @@ sudo sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/apache2/
 sudo sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/apache2/php.ini
 sudo sed -i "s/max_execution_time = .*/max_execution_time = 60/" /etc/php5/apache2/php.ini
 sudo sed -i "s/upload_max_filesize = .*/upload_max_filesize = 8M/" /etc/php5/apache2/php.ini
-sudo sed -i "s/allow_url_fopen = .*/allow_url_fopen = OFF/" /etc/php5/apache2/php.ini
+sudo sed -i "s/allow_url_fopen = .*/allow_url_fopen = Off/" /etc/php5/apache2/php.ini
+sudo sed -i "s/short_open_tag = .*/short_open_tag = On/" /etc/php5/apache2/php.ini
 sudo sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/cli/php.ini
 sudo sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/cli/php.ini
+sudo sed -i "s/short_open_tag = .*/short_open_tag = On/" /etc/php5/cli/php.ini
 sudo sed -i "s/memory_limit = .*/memory_limit = 512M/" /etc/php5/cli/php.ini
 
 # Configure Mcrypt (Ubuntu 14.04)
