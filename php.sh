@@ -32,3 +32,7 @@ echo "$xdebug" | sudo tee -a /etc/php5/mods-available/xdebug.ini
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
+
+# Install PHPUnit
+curl -sS https://phar.phpunit.de/phpunit.phar
+sudo mv phpunit.phar /usr/local/bin/phpunit
