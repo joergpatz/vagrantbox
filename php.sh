@@ -30,7 +30,7 @@ xdebug.max_nesting_level=200"
 echo "$xdebug" | sudo tee -a /etc/php5/mods-available/xdebug.ini
 
 # Install PHPUnit
-wget https://phar.phpunit.de/phpunit.phar
+wget -nv https://phar.phpunit.de/phpunit.phar
 chmod +x phpunit.phar
 sudo mv phpunit.phar /usr/local/bin/phpunit
 
