@@ -29,10 +29,11 @@ xdebug.remote_autostart=0
 xdebug.max_nesting_level=200"
 echo "$xdebug" | sudo tee -a /etc/php5/mods-available/xdebug.ini
 
+# Install PHPUnit
+wget https://phar.phpunit.de/phpunit.phar
+chmod +x phpunit.phar
+sudo mv phpunit.phar /usr/local/bin/phpunit
+
 # Install Composer
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
-
-# Install PHPUnit
-curl -sS https://phar.phpunit.de/phpunit.phar
-sudo mv phpunit.phar /usr/local/bin/phpunit

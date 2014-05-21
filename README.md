@@ -13,6 +13,7 @@ The Vagrantfile include the shell script `bootstrap.sh` from the host and execut
 - Apache
 - PHP 5.5
 - Composer
+- PHPUnit
 - MySQL (Password: root)
 - PHPMyAdmin (Access: `http://<servername-or-IP>/phpmyadmin`)
 - Joerg's Bash Aliases
