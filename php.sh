@@ -28,6 +28,7 @@ xdebug.remote_port=9000
 xdebug.remote_autostart=0
 xdebug.max_nesting_level=200"
 echo "$xdebug" | sudo tee -a /etc/php5/mods-available/xdebug.ini
+sudo php5enmod xdebug
 
 # Install PHPUnit
 wget -nv https://phar.phpunit.de/phpunit.phar
