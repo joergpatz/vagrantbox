@@ -16,4 +16,5 @@ sudo service mongod status
 php -m | grep mongo
 
 # Getting an AdminUI: http://docs.mongodb.org/ecosystem/tools/administration-interfaces/
-wget -nv -O /var/www/phpinfo.dev/genghis.php https://raw.githubusercontent.com/bobthecow/genghis/master/genghis.php
+# Download and unzip rockmongo (http://rockmongo.com/):
+wget -nv https://github.com/iwind/rockmongo/archive/master.zip && unzip -q master.zip -d /var/www/phpinfo.dev

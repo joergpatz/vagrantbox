@@ -7,7 +7,7 @@ sudo apt-get update
 sudo locale-gen de_DE.UTF-8
 
 # Install system packages
-sudo apt-get install -y build-essential curl libmcrypt4 mc nano htop git
+sudo apt-get install -y build-essential curl libmcrypt4 mc nano htop git unzip
 
 # Download Bash Aliases
 wget -nv -O /home/vagrant/.bash_aliases https://raw.githubusercontent.com/joergpatz/vagrantbox/master/bash_aliases

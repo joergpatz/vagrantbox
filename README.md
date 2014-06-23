@@ -21,7 +21,7 @@ The Vagrantfile include the shell script `bootstrap.sh` from the host and execut
 ## Optional Includes
 
 - MongoDB
-- Genghis (MongoDB Admin, Access: `http://phpinfo.dev/genghis.php`)
+- Rockmongo (MongoDB Admin, Access: `http://phpinfo.dev/rockmongo-master`, Login: admin)
 
 After the box has been provisioned, maybe only need to add a entry in the [hosts file](http://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file) on the host machine.
 Need this for correct dev domain -> IP resolution, for example: `192.168.56.3 phpinfo.dev`.
