@@ -15,5 +15,5 @@ sudo service apache2 reload
 sudo service mongod status
 php -m | grep mongo
 
-# Getting a AdminUI: http://docs.mongodb.org/ecosystem/tools/administration-interfaces/
-wget -nv -O /var/www/phpinfo.dev/moadmin.php https://raw.githubusercontent.com/MongoDB-Rox/phpMoAdmin-MongoDB-Admin-Tool-for-PHP/master/moadmin.php
+# Getting an AdminUI: http://docs.mongodb.org/ecosystem/tools/administration-interfaces/
+wget -nv -O /var/www/phpinfo.dev/genghis.php https://raw.githubusercontent.com/bobthecow/genghis/master/genghis.php
