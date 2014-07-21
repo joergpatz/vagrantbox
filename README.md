@@ -20,6 +20,7 @@ The Vagrantfile include the shell script `bootstrap.sh` from the host and execut
 
 ## Optional Includes
 
+- NodeJS
 - MongoDB
 - Rockmongo (MongoDB Admin, Access: `http://phpinfo.dev/rockmongo-master`, Login: admin)
 
