@@ -22,7 +22,8 @@ The Vagrantfile include the shell script `bootstrap.sh` from the host and execut
 
 - NodeJS
 - MongoDB
-- Rockmongo (MongoDB Admin, Access: `http://phpinfo.dev/rockmongo-master`, Login: admin)
+- Rockmongo (MongoDB Admin for PHP, Access: `http://phpinfo.dev/rockmongo-master`, Login: admin)
+- Mongo-Express (MongoDB Admin for NodeJS, Access: `http://192.168.56.3:8081`)
 
 After the box has been provisioned, maybe only need to add a entry in the [hosts file](http://www.howtogeek.com/howto/27350/beginner-geek-how-to-edit-your-hosts-file) on the host machine.
 Need this for correct dev domain -> IP resolution, for example: `192.168.56.3 phpinfo.dev`.
