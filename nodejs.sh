@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-apt-get install nodejs
-apt-get install npm
+apt-get install -y nodejs
+apt-get install -y npm
 
 # Install latest NodeJS Server
 #wget -nv http://nodejs.org/dist/node-latest.tar.gz

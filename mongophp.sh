@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 # Install PHP MongoDB driver (http://docs.mongodb.org/ecosystem/drivers/php/)
-printf "\n" | sudo pecl install mongo
-echo "extension=mongo.so" | sudo tee /etc/php5/mods-available/mongo.ini
-sudo php5enmod mongo
+printf "\n" | pecl install mongo
+echo "extension=mongo.so" | tee /etc/php5/mods-available/mongo.ini
+php5enmod mongo
 
-sudo service apache2 reload
-sudo service mongod status
+service apache2 reload
+service mongod status
 php -m | grep mongo
 
 # Getting an AdminUI: http://docs.mongodb.org/ecosystem/tools/administration-interfaces/
