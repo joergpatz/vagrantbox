@@ -10,7 +10,7 @@ The Vagrantfile include the shell script `bootstrap.sh` from the host and execut
 ## Includes
 
 - Ubuntu Server 14.04
-- Apache
+- Apache 2.4
 - PHP 5.5
 - Composer
 - PHPUnit

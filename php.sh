@@ -8,13 +8,11 @@ php5-xdebug php-pear
 sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/apache2/php.ini
 sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/apache2/php.ini
 sed -i "s/max_execution_time = .*/max_execution_time = 60/" /etc/php5/apache2/php.ini
+sed -i "s/max_execution_time = .*/max_execution_time = 90/" /etc/php5/cli/php.ini
 sed -i "s/upload_max_filesize = .*/upload_max_filesize = 8M/" /etc/php5/apache2/php.ini
 sed -i "s/allow_url_fopen = .*/allow_url_fopen = Off/" /etc/php5/apache2/php.ini
 sed -i "s/short_open_tag = .*/short_open_tag = On/" /etc/php5/apache2/php.ini
-sed -i "s/error_reporting = .*/error_reporting = E_ALL/" /etc/php5/cli/php.ini
-sed -i "s/display_errors = .*/display_errors = On/" /etc/php5/cli/php.ini
-sed -i "s/short_open_tag = .*/short_open_tag = On/" /etc/php5/cli/php.ini
-sed -i "s/memory_limit = .*/memory_limit = 512M/" /etc/php5/cli/php.ini
+sed -i "s/memory_limit = .*/memory_limit = 128M/" /etc/php5/apache2/php.ini
 
 # Configure Mcrypt (Ubuntu 14.04)
 php5enmod mcrypt

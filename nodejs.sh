@@ -9,3 +9,14 @@ apt-get install -y npm
 #tar -xvzf node-latest.tar.gz && cd node-v*
 #./configure && make && make install
 #npm version
+
+# Install Forever
+npm install -g forever
+
+# Install Bower frontend package management
+npm install -g bower
+
+# Debugging
+#npm install -g node-inspector
+apt-get install -y balance
+balance 8585 127.0.0.1:5858
