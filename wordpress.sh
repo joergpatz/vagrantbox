@@ -22,7 +22,7 @@ echo "Database $MYSQLDB and user $MYSQLUSER created with a password $MYSQLPW"
 
 # download wordpress and install files
 mkdir -p ${WORDPRESSPATH}
-wget https://wordpress.org/latest.zip && unzip latest.zip && mv wordpress* ${WORDPRESSPATH} && rm -f latest.zip
+wget https://wordpress.org/latest.zip && unzip latest.zip && mv wordpress*/* ${WORDPRESSPATH}/ && rm -f latest.zip
 
 # modify wordpress config file
 if [ -f ${WORDPRESSPATH}/wp-config-sample.php ];

@@ -28,3 +28,9 @@ source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master
 #source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/mongodb.sh)
 #source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/mongophp.sh)
 #source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/mongojs.sh)
+
+# Download Wordpress install script
+#source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/wordpress.sh)
+
+# Download ImageMagick install script
+#source <(wget -qO- https://raw.githubusercontent.com/joergpatz/vagrantbox/master/imagemagick.sh)
