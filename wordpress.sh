@@ -18,10 +18,17 @@ Q3="FLUSH PRIVILEGES;"
 SQL="${Q1}${Q2}${Q3}"
 
 $MYSQL -uroot -proot -e "$SQL"
-echo "Database $MYSQLDB and user $MYSQLUSER created with a password $MYSQLPW"
+echo "INFO: Database $MYSQLDB and user $MYSQLUSER created with a password $MYSQLPW."
 
-# download wordpress and install files
+# check our wordpress directory, if exist overwrite
+if [ -d ${WORDPRESSPATH} ]
+then
+    rm -rf ${WORDPRESSPATH}
+    echo 'INFO: Previous Wordpress installation deleted.'
+    sleep 3
+fi
 mkdir -p ${WORDPRESSPATH}
+# download wordpress and install files
 wget https://wordpress.org/latest.zip && unzip latest.zip && mv wordpress*/* ${WORDPRESSPATH}/ && rm -f latest.zip
 
 # modify wordpress config file
@@ -41,7 +48,7 @@ then
    sed -i "s/define('LOGGED_IN_SALT',   'put your unique phrase here'/define('LOGGED_IN_SALT',   '$(salt)'/" ${WORDPRESSPATH}/wp-config.php
    sed -i "s/define('NONCE_SALT',       'put your unique phrase here'/define('NONCE_SALT',       '$(salt)'/" ${WORDPRESSPATH}/wp-config.php
 else
-   echo "Wordpress files does not exist."
+   echo "WARN: Wordpress files does not exist."
    exit 1;
 fi
 
