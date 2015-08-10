@@ -1,10 +1,11 @@
 #!/usr/bin/env bash
 
+# Fix locale
+update-locale LC_ALL=en_US.UTF-8
+update-locale LANGUAGE=en_US.UTF-8
+
 # Upgrade Base Packages
 apt-get update
-
-# install de_DE locale
-locale-gen de_DE.UTF-8
 
 # Install system packages
 apt-get install -y build-essential python curl libmcrypt4 mc nano htop git unzip jq
